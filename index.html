@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ceb46e887.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/css/index.css">
+    <title>Dynamic CSS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxTitle divDefault">
+            <h1>Welcome to <e class="boldWord">Login</e></h1>
+        </div>
+        <div class="boxSubtitle divDefault">
+            <p>Fill out the data to access</p>
+        </div>
+        <div class="boxInput divDefault">
+            <div class="inputConfig divDefault">
+                <p>User</p>
+                <div class="inputLine" id="inputLineUser">
+                    <input type="text" name="user" id="User" placeholder="testuser">
+                    <p><i class="fa-solid fa-user"></i></p>
+                </div>
+            </div>
+            <div class="inputConfig divDefault">
+                <p>Password</p>
+                <div class="inputLine" id="inputLinePassword">
+                    <input type="password" name="password" id="Password" placeholder="mypassword">
+                    <p onclick="viewPassword()"><i id="eye"class="fa-solid fa-eye-slash"></i></p>
+                    <!--<i class="fa-solid fa-eye"></i>-->
+                </div>
+            </div>
+        </div>
+        <div class="boxButton divDefault">
+            <input type="button" value="Login" class="login" onclick="verification()">
+            <input type="button" value="Cancel" class="cancel" onclick="cancel()">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
